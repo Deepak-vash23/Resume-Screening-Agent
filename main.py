@@ -50,3 +50,8 @@ if click:
         match = getResult(job_description, resume)
         match = round(match, 2)
         st.success(f"Match Percentage: {match}%")
+
+import os
+
+port = int(os.environ.get("PORT", 8501))
+st.set_page_config(layout="wide")
